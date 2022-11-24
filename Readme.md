@@ -1,7 +1,7 @@
-# Личный проект «Седона» 
+# Личный проект «Седона»
 
-* Студент: [Вадим Кузьмин](https://up.htmlacademy.ru/adaptive/27/user/2150705).
-* Наставник: `Неизвестно`.
+- Студент: [Вадим Кузьмин](https://up.htmlacademy.ru/adaptive/27/user/2150705).
+- Наставник: [Сергей Зубов](https://htmlacademy.ru/profile/serj).
 
 ---
 
