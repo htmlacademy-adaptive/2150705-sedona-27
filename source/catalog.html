@@ -31,7 +31,7 @@
     </header>
     <main class="main-container">
       <div class="hero">
-        <img class="hero-background" src="img/sedona-title.svg" width="229" height="39" alt="Надпись - Седона">
+        <img class="hero__image" src="img/sedona-title.svg" width="229" height="39" alt="Надпись - Седона">
       </div>
       <section class="multimedia">
         <div class="description multimedia__description">
@@ -40,66 +40,55 @@
         </div>
         <ul class="multimedia__list">
           <li class="multimedia__item">
-            <img src="img/catalog-photo-1.jpg" alt="Автомобильная дорога, уходящая в закат на фоне гор.">
+            <img class="multimedia__image" src="img/photo-road.jpg" alt="Автомобильная дорога, уходящая в закат на фоне гор.">
             <p class="multimedia__text">Неродные просторы</p>
             <p class="multimedia__author-name">Автор фото: Борис</p>
-            <div class="multimedia__comments comments">
-              <label class="comments__label label">
-                <button class="comments__button button" type="button">
-                  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="23" height="21" fill="none" viewBox="0 0 23 21">
-                    <path fill="#000" d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z" opacity=".3"/></svg>
-                    </button>
-                1350
-              </label>
-            </div>
+            <button class="multimedia__button" type="button">
+              <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="23" height="21" fill="none" viewBox="0 0 23 21">
+                <path fill="#000" d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z" opacity=".3"/>
+              </svg>
+              1350
+            </button>
           </li>
           <li class="multimedia__item">
-            <img src="img/catalog-photo-2.jpg" alt="Цветущий кактус, зелеными и желтыми цветами на фоне гор.">
+            <img class="multimedia__image" src="img/photo-cactus.jpg" alt="Цветущий кактус, зелеными и желтыми цветами на фоне гор.">
             <p class="multimedia__text">Местная растительность</p>
             <p class="multimedia__author-name">Автор фото: Сергей</p>
-            <div class="multimedia__comments comments">
-              <label class="comments__label label">
-                <button class="comments__button button" type="button">
-                  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="23" height="21" fill="none" viewBox="0 0 23 21">
-                  <path fill="#000" d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z" opacity=".3"/></svg>
-                  </button>
+            <button class="multimedia__button" type="button">
+              <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="23" height="21" fill="none" viewBox="0 0 23 21">
+                <path fill="#000" d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z" opacity=".3"/>
+              </svg>
                 143
-              </label>
-            </div>
+            </button>
           </li>
           <li class="multimedia__item">
-            <img src="img/catalog-photo-3.jpg" alt="Автомобильная дорога, посреди густого хвойного леса.">
+            <img class="multimedia__image" src="img/photo-forest.jpg" alt="Автомобильная дорога, посреди густого хвойного леса.">
             <p class="multimedia__text">Дорога на север</p>
             <p class="multimedia__author-name">Автор фото: Петр</p>
-            <div class="multimedia__comments comments">
-              <label class="comments__label label">
-                <button class="comments__button button" type="button">
-                  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="23" height="21" fill="none" viewBox="0 0 23 21">
-                  <path fill="#000" d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z" opacity=".3"/></svg>
-                  </button>
-                96
-              </label>
-            </div>
+            <button class="multimedia__button" type="button">
+              <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="23" height="21" fill="none" viewBox="0 0 23 21">
+                <path fill="#000" d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z" opacity=".3"/>
+              </svg>
+              96
+            </button>
+
           </li>
           <li class="multimedia__item">
-            <img src="img/catalog-photo-4.jpg" alt="Мост дьявола, пустынный каньон на фоне гор.">
+            <img src="img/photo-canyon.jpg" alt="Мост дьявола, пустынный каньон на фоне гор.">
             <p class="multimedia__text">Мост дьявола</p>
             <p class="multimedia__author-name">Автор фото: Антон</p>
-            <div class="multimedia__comments comments">
-              <label class="comments__label label">
-                <button class="comments__button button" type="button">
-                  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="23" height="21" fill="none" viewBox="0 0 23 21">
-                  <path fill="#000" d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z" opacity=".3"/></svg>
-                  </button>
-                254
-              </label>
-            </div>
+            <button class="multimedia__button" type="button">
+              <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="23" height="21" fill="none" viewBox="0 0 23 21">
+                <path fill="#000" d="m12.96 3.78-.62 3.05-.63 2.62h9.09v2.2l-3.03 7.25h-9.4V8.4l4.6-4.62ZM2.1 10.5v8.4-8.4ZM13.8 0 6.9 6.93c-.42.32-.63.84-.63 1.47v10.5c0 1.16.94 2.1 2.1 2.1h9.4c.84 0 1.57-.52 1.88-1.26l3.14-7.45c.1-.21.1-.53.1-.74v-2.1H23a2.1 2.1 0 0 0-2.1-2.1h-6.58l1.05-4.83v-.31c0-.43-.21-.84-.42-1.16L13.8 0ZM4.18 8.4H0V21h4.18V8.4Z" opacity=".3"/>
+              </svg>
+              254
+            </button>
           </li>
         </ul>
         <div class="video-presentation">
           <div class="description video-presentation__description">
-            <h2 class="description__title description__title--presentation">Все еще сомневаетесь?</h2>
-            <p class="description__text description__text--presentation">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+            <h2 class="description__title">Все еще сомневаетесь?</h2>
+            <p class="description__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
           </div>
           <video src="#" poster="img/video-poster.jpg" width="280" height="177"></video>
         </div>
@@ -107,7 +96,7 @@
     </main>
     <footer class="main-footer">
       <h2 class="visually-hidden">Социальные сети</h2>
-      <span class="hashtag">#visitSEDONA</span>
+      <span class="main-footer__hashtag">#visitsedona</span>
       <ul class="socials">
         <li class="socials__item">
           <a class="socials__icon" href="https://vk.com/htmlacademy">
@@ -136,5 +125,5 @@
         </a>
       </div>
     </footer>
-</body>
+  </body>
 </html>
