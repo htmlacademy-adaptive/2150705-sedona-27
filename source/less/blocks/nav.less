@@ -1,0 +1,23 @@
+.nav {
+  min-height: 56px;
+}
+
+.nav__list {
+
+  .tablet({
+    display: flex;
+    flex-wrap: wrap;
+  });
+
+  .desktop(
+    {
+      justify-content: space-between
+    }
+  );
+}
+
+.nav-toggle {
+  .tablet({
+    display: none;
+  });
+}

@@ -6,13 +6,25 @@
   background-color: @blue-400;
   box-shadow: 0 1px 0 0 @black-02,
     inset 0 1px 0 0 @white-02;
-  margin-bottom: 1px;
-}
 
-.site-list__item:last-child {
-  margin-bottom: 0;
-}
+  .tablet({
+    box-shadow: none;
+    min-width: 153px;
+    background-color: @white;
 
+    &:nth-child(2){
+      margin-right: 153px;
+    }
+  });
+
+  .desktop(
+    {
+      &:nth-child(2){
+        margin-right: 0;
+      }
+    }
+  );
+}
 
 .site-list__link {
   font-size: 18px;
@@ -24,4 +36,16 @@
   display: block;
   padding-top: 17px;
   padding-bottom: 12px;
+
+  .tablet({
+    background-color: @white;
+    color: @black;
+    padding: 18px 0;
+    font-size: 14px;
+    line-height: 21px;
+
+    &--current {
+      color: @brown-current;
+    }
+  });
 }
