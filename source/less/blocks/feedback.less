@@ -1,18 +1,15 @@
 .feedback__form {
 
-  .tablet(
-    {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      justify-items: center;
-      grid-template-areas:
-                          "name contacts"
-                          "impression impression"
-                          "attractions attractions"
-                          "textarea textarea";
-
-    }
-  );
+  .tablet({
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    grid-template-areas:
+                        "name contacts"
+                        "impression impression"
+                        "attractions attractions"
+                        "textarea textarea";
+  });
 }
 
 .feedback__group {
@@ -21,13 +18,11 @@
   border: none;
 
   &--name {
-    .tablet(
-      {
-        grid-area: name;
-        display: flex;
-        flex-direction: column;
-      }
-    );
+    .tablet({
+      grid-area: name;
+      display: flex;
+      flex-direction: column;
+    });
   }
 
   &--contacts {
@@ -37,37 +32,31 @@
   }
 
   &--impression {
-    .tablet(
-      {
-        grid-area: impression;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-      }
-    );
-    .desktop(
-      {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 66px;
-      }
-    );
+    .tablet({
+      grid-area: impression;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    });
+
+    .desktop({
+      display: flex;
+      flex-wrap: wrap;
+      gap: 66px;
+    });
   }
 
   &--attractions {
-    .tablet(
-      {
-        grid-area: attractions;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-      }
-    );
-    .desktop(
-      {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 64px;
-      }
-    );
+    .tablet({
+      grid-area: attractions;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    });
+
+    .desktop({
+      display: flex;
+      flex-wrap: wrap;
+      gap: 64px;
+    });
   }
 
   &--textarea {
@@ -97,13 +86,15 @@
 }
 
 .feedback__submit {
-  .tablet(
-    {
-      grid-column: span 2;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      width: 648px;
-    }
-  );
+  .tablet({
+    grid-column: span 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  });
+
+  .desktop({
+    padding: 0 96px;
+  });
 }
