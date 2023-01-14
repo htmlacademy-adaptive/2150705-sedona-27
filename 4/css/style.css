@@ -182,19 +182,19 @@ a {
 @media (min-width: 768px) {
   .features__advantages-list {
     display: grid;
-    grid-template-columns: 256px 256px 256px;
+    grid-template-columns: repeat(3, 256px);
   }
 }
 @media (min-width: 1280px) {
   .features__advantages-list {
-    grid-template-columns: 400px 400px 400px;
+    grid-template-columns: repeat(3, 400px);
   }
 }
 @media (min-width: 768px) {
   .features__image {
-    width: 512px;
-    height: 256px;
+    width: 100%;
     object-fit: cover;
+    height: 256px;
   }
 }
 @media (min-width: 1280px) {
@@ -217,7 +217,7 @@ a {
 }
 .main-hero {
   background-color: #add8e6;
-  width: 320px;
+  width: 100%;
   margin: 0 auto;
   background-image: url("../img/hero-image.jpg");
   background-repeat: no-repeat;
@@ -225,7 +225,6 @@ a {
 }
 @media (min-width: 768px) {
   .main-hero {
-    width: 768px;
     height: 400px;
     background-image: url("../img/hero-tablet.jpg");
     padding-top: 77px;
@@ -233,7 +232,6 @@ a {
 }
 @media (min-width: 1280px) {
   .main-hero {
-    width: 1200px;
     background-image: url("../img/hero-desktop.jpg");
   }
 }
@@ -389,7 +387,12 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 648px;
+    width: 100%;
+  }
+}
+@media (min-width: 1280px) {
+  .feedback__submit {
+    padding: 0 96px;
   }
 }
 .multimedia {
@@ -428,8 +431,34 @@ a {
   padding-right: 0;
   padding-left: 0;
 }
+.multimedia__image {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+@media (min-width: 1280px) {
+  .multimedia__image {
+    height: 400px;
+    object-fit: cover;
+  }
+}
 .form-container {
   padding: 0 20px;
+}
+.main-wrapper {
+  margin: 0 auto;
+  width: 320px;
+}
+@media (min-width: 768px) {
+  .main-wrapper {
+    width: 768px;
+  }
+}
+@media (min-width: 1280px) {
+  .main-wrapper {
+    width: 1200px;
+    padding: 0 40px;
+  }
 }
 @media (min-width: 768px) {
   .main-header__logo {
@@ -467,19 +496,7 @@ a {
   font-weight: 700;
   color: #000000;
   background-color: #ffffff;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
-  width: 320px;
-}
-@media (min-width: 768px) {
-  .page__body {
-    width: 768px;
-  }
-}
-@media (min-width: 1280px) {
-  .page__body {
-    width: 1200px;
-    padding: 0 40px;
-  }
 }
 /*# sourceMappingURL=style.css.map */
