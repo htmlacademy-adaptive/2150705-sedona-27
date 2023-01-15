@@ -1,6 +1,16 @@
 .main-footer {
   padding: 28px 0;
-  .flex(30px);
+  display: flex;
   flex-direction: column;
   align-items: center;
+
+  .tablet({
+    flex-direction: row;
+    justify-content: space-between;
+  });
+}
+
+
+.main-footer__hashtag {
+  text-transform: uppercase;
 }
